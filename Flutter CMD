@@ -1,0 +1,24 @@
+CMD:
+•	cd.. (Remove Last Path)
+•	cd path (Add Path)
+•	mkdir folder_name  (Make New Folder)
+•	mkdir folder_name1  folder_name2 folder_name3 (Make Multiple Folder)
+•	Code . (VS Code Open)
+
+Flutter CMD:
+•	flutter create my_app
+•	flutter analyze
+•	flutter test
+•	flutter clean
+Flutter Fix:
+•	dart fix --dry-run (To preview proposed changes)
+•	dart fix --apply (To apply the proposed changes)
+Flutter Pub
+•	flutter pub get
+•	flutter pub outdated
+•	flutter pub upgrade
+Flutter Web
+•	flutter run -d chrome (Run in Chrome using the default renderer option )
+•	flutter build web --release (Build your app in release mode, using the default (auto))
+•	flutter build web --web-renderer canvaskit --release (Build your app in release mode, using just the Canvas Kit renderer)
+•	flutter run -d chrome --web-renderer html --profile (Run your app in profile mode using the HTML renderer)
