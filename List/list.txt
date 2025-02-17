@@ -1,0 +1,45 @@
+Every time different list show.
+
+void main() {
+  List list=[2,3,5,6,1,7,3,5];
+  
+  list.shuffle();
+
+  print(list);
+}
+
+Output: [6, 2, 1, 5, 5, 7, 3, 3]
+
+--------------------------------------------------
+Reverse List
+void main() {
+  List list=[2,3,5,6,1,7,3,5];
+  
+  print(list.reversed.toList());
+}
+
+Output: [5, 3, 7, 1, 6, 5, 3, 2]
+--------------------------------------------------
+Similar number remove
+void main() {
+  List list=[2,3,5,6,1,7,3,5];
+  
+  print(list.toSet().toList());
+}
+Output: [2, 3, 5, 6, 1, 7]
+--------------
+void main() {
+  List list=[2,3,5,6,1,7,3,5];
+  
+  print(list.map((element)=>"${element}".runtimeType).toList());
+}
+output: [String, String, String, String, String, String, String, String]
+--------------------------------------------------------
+Only first 3 value get:
+
+void main() {
+  List list=[2,3,5,6,1,7,3,5];
+  
+  print(list.take(3).toList());
+}
+Output: [2, 3, 5]

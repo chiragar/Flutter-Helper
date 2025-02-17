@@ -1,0 +1,31 @@
+Final Vs Const
+
+Constancy	                    Runtime constant	                                        Compile-time constant
+Initialization timing	        During variable access or constructor                     During compilation
+Value type	                  Can be any expression	                                    Must be a compile-time constant
+
+```
+class User {
+  final String name;
+
+  User(this.name) {
+    // final variable can be initialized in the constructor
+  }
+
+  final int age = calculateAge(); // This is allowed with final, but not const
+
+  int calculateAge() {
+    // Simulates calculating age based on some logic
+    return 30;
+  }
+}
+```
+
+
+```
+const double pi = 3.14159; // Compile-time constant value
+
+const int maxRetries = 3; // Another compile-time constant
+
+const Color backgroundColor = Colors.blue; // Constant color reference
+```
